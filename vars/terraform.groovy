@@ -44,7 +44,7 @@ def call(){
                   export AWS_ACCESS_KEY_ID="${AWS_USR}"
                   export AWS_SECRET_ACCESS_KEY="${AWS_PSW}"
                   export AWS_DEFAULT_REGION="us-west-2"
-                  terraform apply -auto-approve -var DBUSER=${RDS_USR} -var DBPASS=${RDS_PSW} 
+                  terraform apply -auto-approve
               '''
                 }
               }
@@ -62,7 +62,7 @@ def call(){
                   export AWS_ACCESS_KEY_ID="${AWS_USR}"
                   export AWS_SECRET_ACCESS_KEY="${AWS_PSW}"
                   export AWS_DEFAULT_REGION="us-west-2"
-                  terraform destroy -auto-approve -var DBUSER=${RDS_USR} -var DBPASS=${RDS_PSW} 
+                  terraform destroy -auto-approve
               '''
                 }
               }
