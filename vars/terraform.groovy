@@ -27,6 +27,8 @@ def call(){
                   export AWS_ACCESS_KEY_ID="${AWS_USR}"
                   export AWS_SECRET_ACCESS_KEY="${AWS_PSW}"
                   export AWS_DEFAULT_REGION="us-west-2"
+                  export TF_VAR_LICENSE_KEY = ${LICENSE_KEY}
+                  export TF_VAR_API_KEY = ${API_KEY}
                   terraform get -update
                   terraform init
               '''
@@ -46,6 +48,8 @@ def call(){
                   export AWS_ACCESS_KEY_ID="${AWS_USR}"
                   export AWS_SECRET_ACCESS_KEY="${AWS_PSW}"
                   export AWS_DEFAULT_REGION="us-west-2"
+                  export TF_VAR_LICENSE_KEY = ${LICENSE_KEY}
+                  export TF_VAR_API_KEY = ${API_KEY}
                   terraform apply -auto-approve
               '''
                 }
@@ -64,6 +68,8 @@ def call(){
                   export AWS_ACCESS_KEY_ID="${AWS_USR}"
                   export AWS_SECRET_ACCESS_KEY="${AWS_PSW}"
                   export AWS_DEFAULT_REGION="us-west-2"
+                  export TF_VAR_LICENSE_KEY = ${LICENSE_KEY}
+                  export TF_VAR_API_KEY = ${API_KEY}
                   terraform destroy -auto-approve
               '''
                 }
