@@ -12,6 +12,8 @@ def call(){
       TF_VAR_GIT  = credentials('GitUserPass')
       TF_VAR_R    = credentials('RabbitMq')
       TF_VAR_SSH  = credentials('SSH_ROOT')
+      LICENSE_KEY = credentials('LICENSE_KEY')
+      API_KEY     = credentials('API_KEY')
     }
 
 
